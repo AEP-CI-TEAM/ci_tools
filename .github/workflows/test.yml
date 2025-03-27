@@ -10,13 +10,13 @@ jobs:
     steps:
       - name: test
         run: |
-          echo "aaa ${{ github.event.pull_request.repository }}"
+          echo "aaa ${{ github.event.pull_request.repo }}"
           echo ${{ github.event.repository.default_branch }}
           echo "This PR is opened by ${{ github.event.pull_request.user.login }}"
           echo "This PR is opened by ${{ github.event.pull_request.ref }}"
           
           echo =================
-          echo Fork repo: ${{ github.event.pull_request.head.repository }}
+          echo Fork repo: ${{ github.event.pull_request.head.repo }}
           echo "Fork Owner: ${{ github.event.pull_request.head.user.login }}"
           echo Fork repo branch: ${{ github.event.pull_request.head.ref }}
           echo Fork Repo Name: ${{ github.event.pull_request.head.repo.name }}
