@@ -14,6 +14,6 @@ jobs:
           echo "This PR is opened by ${{ github.event.pull_request.user.login }}"
           echo "This PR is opened by ${{ github.event.pull_request.ref }}"
           
-          # echo "Repository: ${{ github.repository }}"
-          # echo "Repository Name: ${{ github.event.repository.name }}"
-          # echo "Base Repository Name: ${{ github.event.pull_request.base.repo.name }}" 
+          echo "Repository: ${{ github.repository }}"
+          echo "Repository Name: ${{ github.event.repository.name }}"
+          echo "Base Repository Name: ${{ github.event.pull_request.base.repo.name }}" 
